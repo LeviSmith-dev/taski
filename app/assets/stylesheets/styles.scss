@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "Nero";
+	src: url('/assets/Nero');
+}
+@font-face {
+	font-family: "typewriter";
+	src: url('/assets/typewriter');
+}
+
+body {
+	margin: 42px;
+}
+
+
+h1 {
+	font-family: "typewriter", "Arial Black", sans-serif;
+	font-size: 3.5em;
+}
+
+p {
+	font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+a {
+	font-size:2.0em;
+	font-family:"typewriter", sans-serif;
+}
+
