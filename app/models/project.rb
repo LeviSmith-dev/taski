@@ -4,7 +4,7 @@ class Project < ApplicationRecord
 	has_many :tasks
 
 	validates_presence_of :title, :description, :percent_complete
-	
+
 	scope :almost_completed, -> {where('percent_complete > 75.0')}
 	scope :still_needs_more_work, -> { where('percent_complete <75.0') }
 
