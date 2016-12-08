@@ -1,7 +1,5 @@
-class Projects::TasksController < ApplicationController
-  before_action :set_task, only:[:show, :edit, :update, :destroy]
-	before_action :set_project, only:[:show, :new, :edit, :create, :update, :destroy]
-
+class TasksController < ApplicationController
+	before_action :set_task, only:[:show, :edit, :update, :destroy]
 
   def show
   end
@@ -15,8 +13,7 @@ class Projects::TasksController < ApplicationController
 
   def create
   	@task= Task.new(task_params)
-    @task.project_id = @project.id
-    
+
   	respond_to do |format|
   		if @task.new(task_params)
   			format.html {redirect_to @task, notice: "Task was created successfully!"}
@@ -55,8 +52,6 @@ class Projects::TasksController < ApplicationController
   		@task = Task.find(params[:id])
   	end
 
-    def set_project
-      @porject = Project.find(params[:project_id])
   	def task_params
   		params.require(:task).permit(:title, :description, :completed, :task_file)
   	end
