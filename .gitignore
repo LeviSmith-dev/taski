@@ -22,3 +22,11 @@
 
 # Ignore application configuration
 /config/application.yml
+
+.*.DS_store
+
+.DS_store
+
+.*.swp
+
+.swp
