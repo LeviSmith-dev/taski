@@ -34,6 +34,8 @@ gem 'mini_magick', '~> 3.5.0'
 gem 'fog', '~> 1.38.0'
 gem 'figaro'
 
+gem 'devise'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
