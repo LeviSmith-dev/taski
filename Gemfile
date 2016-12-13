@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.3.2'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -29,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'carrierwave'
 gem 'mini_magick', '~> 3.5.0'
-gem 'fog'
+gem 'fog', '~> 1.38.0'
 gem 'figaro'
 
 # Use Capistrano for deployment
