@@ -1,6 +1,13 @@
+<% if current_user %>
 <% @projects.each do |project| %>
 <p></strong><%= project.title %></strong> - <em><%= project.description %> </em><%= "| #{project.percent_complete}" if project.percent_complete %>
 </p>
+
+<% else %>
+	<%= link_to "Register", new_user_registration_path %>
+	<%= link_to "Sign In", new_user_session_path %>
+
+	<% end %>
 
 
 <%end %>
