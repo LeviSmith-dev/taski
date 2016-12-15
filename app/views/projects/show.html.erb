@@ -25,4 +25,6 @@
 	<p><%= link_to task.title, project_task_path(@project.id, task.id) %></p>
 	<% end %>
 
+
 <%= link_to "Add a new task", new_project_task_path(project_id: @project.id) %>
+
